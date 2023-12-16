@@ -1,3 +1,4 @@
+#import package
 import time
 import pandas as pd
 import numpy as np
@@ -7,14 +8,18 @@ CITY_DATA = {'chicago': 'chicago.csv',
              'washington': 'washington.csv'}
 
 
-def get_filters():
+def get_user_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Prompts the user to specify a city, month, and day for data analysis.
+
+    This function asks the user to specify a city (from available options), a month, 
+    and a day of the week. If the user wishes not to filter by month or day, they can 
+    choose 'all' for either option.
 
     Returns:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
+        city (str): Name of the city to analyze.
+        month (str): Name of the month to filter by, or "all" for no filter.
+        day (str): Name of the day of week to filter by, or "all" for no filter.
     """
     print('Hello! Let\'s explore some US bikeshare data!')
 
@@ -205,7 +210,7 @@ def display_raw_data(df):
 
 def main():
     while True:
-        city, month, day = get_filters()
+        city, month, day = get_user_filters()
         df = load_data(city, month, day)
 
         time_stats(df)
