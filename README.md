@@ -1,16 +1,13 @@
 > **Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-
-2023-12-13
+2023-12-17
 
 ### Project Title
-
-udacity - biakeshare project
+DJ's git project with bikeshare.py
 
 ### Description
-
-code with python using bikeshare.csv
+version control project with bikeshare project
 
 ### Files used
 
@@ -19,5 +16,5 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-
-https://docs.python.org/ko/3/tutorial/index.html
+https://git-scm.com/doc
+https://www.freecodecamp.org/korean/news/understanding-git-basics-commands-tips-tricks/
